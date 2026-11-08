@@ -2,9 +2,8 @@
 
 API REST em **Flask** (Python) para enviar (upload) e baixar (download) arquivos, com registro de logs e validações de segurança. Organizada em camadas: rotas, controllers, models e banco de dados (SQLite).
 
-- **Link público (Render):** `https://SEU-SERVICO.onrender.com` *(substitua pelo seu link após o deploy)*
-- **Repositório:** `https://github.com/SEU-USUARIO/upload-download-api`
-
+- **Link público (Render):** https://ad-kaua-xqr3.onrender.com
+- **Repositório:** https://github.com/43111-cyber/NOME-DO-SEU-REPOSITORIO
 ## Tecnologias
 
 - Python 3.13
@@ -32,7 +31,7 @@ API REST em **Flask** (Python) para enviar (upload) e baixar (download) arquivos
 ## Como executar localmente
 
 ```bash
-git clone https://github.com/SEU-USUARIO/upload-download-api.git
+git clone https://github.com/43111-cyber/upload-download-api.git
 cd upload-download-api
 
 python -m venv venv
@@ -60,7 +59,7 @@ A API sobe em `http://localhost:5000`.
 - Tamanho máximo: **30 KB**
 
 ```bash
-curl -X POST -F "file=@exemplo.txt" https://SEU-SERVICO.onrender.com/uploads/upload
+curl -X POST -F "file=@exemplo.txt" https://ad-kaua-xqr3.onrender.com/uploads/upload
 ```
 
 Resposta (200):
@@ -73,7 +72,7 @@ Erros (400): `Nenhum arquivo enviado`, `Nome do arquivo vazio`, `Arquivo excede 
 ### Download
 
 ```bash
-curl -OJ https://SEU-SERVICO.onrender.com/downloads/download/exemplo.txt
+curl -OJ https://ad-kaua-xqr3.onrender.com/downloads/download/exemplo.txt
 ```
 
 Retorna o arquivo como anexo. Se não existir, retorna **404**.
