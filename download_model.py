@@ -1,6 +1,6 @@
 # Importa a função get_db_connection do arquivo database.db
 # Essa função serve para conectar com o banco de dados
-from database.db import get_db_connection  
+from db import get_db_connection  
 
 # Cria uma classe chamada DownloadModel (ela vai cuidar das interações com o banco de dados)
 class DownloadModel:  

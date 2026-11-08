@@ -16,17 +16,17 @@ API REST em **Flask** (Python) para enviar (upload) e baixar (download) arquivos
 ## Estrutura do projeto
 
 ```
-upload-download-api/
-├── app.py                      # Cria o app Flask e registra as rotas
-├── controllers/
-│   ├── upload_controller.py    # Lógica de upload (validações, log)
-│   └── download_controller.py  # Lógica de download
-├── models/                     # Acesso ao banco de dados
-├── routes/                     # Definição dos endpoints (Blueprints)
-├── database/db.py              # Conexão e criação da tabela SQLite
-├── requirements.txt            # Dependências
-├── Procfile                    # Comando de start em produção
-└── render.yaml                 # Configuração do Render (opcional)
+├── app.py                 # Cria o app Flask e registra as rotas
+├── upload_route.py        # Endpoint de upload
+├── upload_controller.py   # Lógica de upload (validações, log)
+├── upload_model.py        # Acesso ao banco (upload)
+├── download_route.py      # Endpoint de download
+├── download_controller.py # Lógica de download
+├── download_model.py      # Acesso ao banco (download)
+├── db.py                  # Conexão e criação da tabela SQLite
+├── requirements.txt       # Dependências
+├── Procfile               # Comando de start em produção
+└── render.yaml            # Configuração do Render (opcional)
 ```
 
 ## Como executar localmente

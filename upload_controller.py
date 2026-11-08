@@ -4,11 +4,11 @@ from flask import jsonify, request  # jsonify: devolve respostas em JSON | reque
 from werkzeug.utils import secure_filename  # Limpa o nome do arquivo, removendo caracteres perigosos (ex: ../../)
 
 # Configuração de logs
-LOG_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "uploads.log")
+LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "uploads.log")
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(message)s")
 
 # Configuração de upload
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PASTA_UPLOAD = os.path.join(BASE_DIR, 'uploads')
 EXTENSOES_PERMITIDAS = {'png', 'jpg', 'jpeg', 'gif', 'pdf', 'txt'}
 TAMANHO_MAXIMO_ARQUIVO = 30 * 1024  # 30 KB

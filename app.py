@@ -1,7 +1,7 @@
 from flask import Flask  
-from database.db import init_db  
-from routes.upload_route import upload_bp  
-from routes.download_route import download_bp  
+from db import init_db  
+from upload_route import upload_bp  
+from download_route import download_bp  
 import os  
 
 app = Flask(__name__)  

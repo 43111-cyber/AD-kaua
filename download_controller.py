@@ -3,7 +3,7 @@ from flask import jsonify, send_from_directory
 
 # Define uma variável chamada UPLOAD_FOLDER que guarda o nome da pasta onde os arquivos ficam guardados
 import os
-UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'uploads')  
+UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')  
 
 # Cria uma classe chamada DownloadController (é tipo uma "caixinha" que guarda funções)
 class DownloadController:  

@@ -1,5 +1,5 @@
 import sqlite3
-from database.db import get_db_connection
+from db import get_db_connection
 
 class UploadModel:
 

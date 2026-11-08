@@ -2,7 +2,7 @@
 from flask import Blueprint  
 
 # Importa a classe DownloadController do arquivo download_controller (ela tem a lógica para baixar arquivos)
-from controllers.download_controller import DownloadController  
+from download_controller import DownloadController  
 
 # Cria um Blueprint chamado 'download_bp', que é tipo um mini aplicativo dentro do Flask
 download_bp = Blueprint('download_bp', __name__)  
